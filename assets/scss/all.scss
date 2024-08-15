@@ -28,7 +28,7 @@
 
 
 @import "./utils/custom_variables_map";
-@debug $info;
+// @debug $info;
 
 // 元件
 @import './components/button';
@@ -36,7 +36,6 @@
 @import './components/form';
 
 @import "bootstrap/scss/bootstrap";
-
 
 
 @import './layout/header.scss';
