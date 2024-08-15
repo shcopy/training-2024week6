@@ -1,0 +1,65 @@
+.btn {
+    border: 0 !important;
+    padding: 12px 20px !important;
+
+    border-radius: 100px !important;    
+    opacity: 1 !important;
+    letter-spacing: 10% !important;
+    font-weight: 700 !important;
+}
+
+.btn-sm {
+    font-weight: 700 !important;
+    padding: 12px 20px !important;
+}
+
+.btn-lg {
+    font-weight: 900 !important;
+    padding: 16px 24px !important;
+}
+
+/* custom green style */
+.btn-custom-green {
+    background-color: $accent-200 !important; 
+    color: $white !important;   
+    
+    display: inline-flex !important;
+    align-items: center !important; 
+    justify-content: center !important; 
+    gap: 8px !important;
+    // padding: 10px 20px;
+    // height: 100%  !important; 
+}
+
+.btn-custom-green:hover {
+    background-color: $accent-300 !important;
+}
+
+.btn-custom-green:active {
+    background-color: $accent-300 !important;
+}
+
+.btn-custom-green:disabled {
+    background-color: $gray-200 !important;
+}
+
+/* custom gray style */
+.btn-custom-gray {
+    background-color: $gray-100 !important; 
+    color: $gray-400 !important;             
+}
+
+.btn-custom-gray:hover {
+    background-color: $gray-200 !important;
+    color: $gray-500 !important;
+}
+
+.btn-custom-gray:active {
+    background-color: $gray-200 !important;
+    color: $gray-500 !important;
+}
+
+.btn-custom-gray:disabled {
+    background-color: $gray-100 !important;
+    color: $gray-300 !important;
+}
