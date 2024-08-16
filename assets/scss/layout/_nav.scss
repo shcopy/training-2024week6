@@ -1,5 +1,11 @@
 .navbar {
 
+	.close {
+		display: none;
+	}
+	  
+
+
 	.navbar-inner {
 		border-bottom: 1px solid $gray-300 !important;
 	}
