@@ -1,22 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>內容訂閱網站</title>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>內容訂閱網站</title>
 
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
+	</head>
+	<body>
 
+		<%- include('./layout/nav'); -%>
 
-    <div class="container">
-      <h1 class="index-title text-info">我是首頁</h1>
-    </div>
+		<!-- start of slider -->
+			<div class="slider"> <div class="container slider_inner">
+				<div class="slider-info">
+					<p>獻給新世代的生活風格誌</p>
+					<h2>一起探索生活的無限可能</h2>
+					<div class="d-block">
+						<button type="button" class="btn btn-custom-green">
+							馬上訂閱
+							<span class="material-icons-outlined">
+								arrow_right_alt
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end of slider -->
+		<!-- start of hot-topic -->
+		<div class="hot-topic">
+			<div class="container hot-topic_inner">
+				<h3 class="fs-4 fs-lg-2 fw-bold mb-4">熱門主題</h3>
+				<div class="row g-4">
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="card">
+							<div class="position-relative">
+								<picture>
+									<source srcset="../assets/images/theme-1.png" media="(min-width: 992px)"/>
+									<img src="../assets/images/theme-1-sm.png" alt="theme-1"/>
+								</picture>
+								<p class="position-absolute top-50 start-50 translate-middle text-white z-1 fs-6 fs-lg-5 fw-bold">城市漫遊者</p>
+							</div>
+						</div>
+					</div>
 
-    <%- include('./layout/footer'); -%>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="position-relative">
+							<picture class="card">
+								<source srcset="../assets/images/theme-2.png" media="(min-width: 992px)"/>
+								<img src="../assets/images/theme-2-sm.png" alt="theme-2" class="card-img-top"/>
+							</picture>
+							<p class="position-absolute top-50 start-50 translate-middle text-white z-1 fs-6 fs-lg-5 fw-bold">秘境尋蹤人</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="position-relative">
+							<picture class="card">
+								<source srcset="../assets/images/theme-3.png" media="(min-width: 992px)"/>
+								<img src="../assets/images/theme-3-sm.png" alt="theme-3" class="card-img-top"/>
+							</picture>
+							<p class="position-absolute top-50 start-50 translate-middle text-white z-1 fs-6 fs-lg-5 fw-bold">品味設計家</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="position-relative">
+							<picture class="card">
+								<source srcset="../assets/images/theme-4.png" media="(min-width: 992px)"/>
+								<img src="../assets/images/theme-4-sm.png" alt="theme-4" class="card-img-top"/>
+							</picture>
+							<p class="position-absolute top-50 start-50 translate-middle text-white z-1 fs-6 fs-lg-5 fw-bold">美食探險記</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="position-relative">
+							<picture class="card">
+								<source srcset="../assets/images/theme-5.png" media="(min-width: 992px)"/>
+								<img src="../assets/images/theme-5-sm.png" alt="theme-5" class="card-img-top"/>
+							</picture>
+							<p class="position-absolute top-50 start-50 translate-middle text-white z-1 fs-6 fs-lg-5 fw-bold">美學建築誌</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="position-relative">
+							<picture class="card">
+								<source srcset="../assets/images/theme-6.png" media="(min-width: 992px)"/>
+								<img src="../assets/images/theme-6-sm.png" alt="theme-1" class="card-img-top"/>
+							</picture>
+							<p class="position-absolute top-50 start-50 translate-middle text-white z-1 fs-6 fs-lg-5 fw-bold">慢活生活行</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="position-relative">
+							<picture class="card">
+								<source srcset="../assets/images/theme-7.png" media="(min-width: 992px)"/>
+								<img src="../assets/images/theme-7-sm.png" alt="theme-7" class="card-img-top"/>
+							</picture>
+							<p class="position-absolute top-50 start-50 translate-middle text-white z-1 fs-6 fs-lg-5 fw-bold">工藝匠心賞</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="position-relative">
+							<picture class="card">
+								<source srcset="../assets/images/theme-8.png" media="(min-width: 992px)"/>
+								<img src="../assets/images/theme-8-sm.png" alt="theme-8" class="card-img-top"/>
+							</picture>
+							<p class="position-absolute top-50 start-50 translate-middle text-white z-1 fs-6 fs-lg-5 fw-bold">時尚先鋒派</p>
+						</div>
+					</div>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+				</div>
+			</div>
+		</div>
+		<!-- end of hot-topic -->
+
+		<div class="container">
+			<h3 class="fs-4 fs-lg-2 fw-bold mb-4">精選文章</h3>
+		</div>
+
+		<div class="container">
+			<h3 class="fs-4 fs-lg-2 fw-bold mb-4">母親節強檔活動</h3>
+		</div>
+
+		<div class="container">
+			<h3 class="fs-4 fs-lg-2 fw-bold mb-4">大家都在看</h3>
+		</div>
+
+		<div class="container">
+			<h3 class="fs-4 fs-lg-2 fw-bold mb-4">品味生活</h3>
+		</div>
+
+		<div class="container">
+			<h3 class="fs-4 fs-lg-2 fw-bold mb-4">Vivre 給你意想不到的生活風格提案</h3>
+		</div>
+
+		<div class="container">
+			<h3 class="fs-4 fs-lg-2 fw-bold mb-4">想看什麼主題由你決定！</h3>
+		</div>
+
+		<%- include('./layout/footer'); -%>
+
+		<script type="module" src="../main.js"></script>
+	</body>
 </html>

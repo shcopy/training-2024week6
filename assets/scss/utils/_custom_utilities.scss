@@ -1,0 +1,12 @@
+// scss-docs-start utils-text
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size":map-merge(
+        map-get($utilities, "font-size"),
+        (responsive: true,)
+      ),
+  )
+);
+// scss-docs-end utils-text
+

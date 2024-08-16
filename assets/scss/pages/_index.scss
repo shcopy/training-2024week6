@@ -1,3 +1,115 @@
-.index-title {
-  font-size: 100px;
+/******* start of slider *******/ 
+.slider {
+		padding-top: 80px;
+		padding-bottom: 80px;
+
+	.slider_inner {
+
+    background-image: url('/assets/images/banner.png') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+		height: 621px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		
+		text-align: left;
+
+    .slider-info {
+      margin-left: 61px;
+
+      h2 {
+        color: $white;
+        font-size: 40px;
+        line-height: 1.2;
+        font-weight: 900;
+        margin-bottom: 24px;
+      }
+  
+      p {
+        color: $white;
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 900;
+        margin-bottom: 12px;
+      }
+    }
+	}
+
+  // max-width:768 (寬度<= 768)
+  @include media-breakpoint-down(md) {
+
+      .slider_inner {
+          // padding-top: 144px;
+          // padding-bottom: 144px;
+          background-image: url('/assets/images/banner-sm.png');
+  
+          height: 551px;
+          text-align: center;
+  
+          .slider-info {
+            margin-left: 0px; // 清空
+            h2 {
+                font-size: 28px;
+                margin-bottom: 8px;
+            }
+            p {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+          }
+      }
+  }
 }
+
+/******* end of slider *******/
+
+
+/******* start of hot-topic *******/
+.hot-topic {
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .hot-topic_inner {
+
+  }
+
+
+  .card {
+    // height: 200px;
+    // background-size: cover;
+
+    // bootstrap 樣式清空
+    border-radius: 0 !important;
+    border-width: 0 !important;
+
+    img {
+      width: 100%;
+      border-radius: 20px 0 20px 0px !important;
+    }
+   }
+  
+  .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 37, 41, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 20px 0 20px 0px !important;
+    border-width: 0 !important;
+  }
+  
+  .card:hover::after {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+/******* end of hot-topic *******/

@@ -1,0 +1,125 @@
+.navbar {
+
+	.navbar-inner {
+		border-bottom: 1px solid $gray-300 !important;
+	}
+
+	.navbar-brand {
+		padding-top: 48px !important;
+		padding-bottom: 48px !important;
+	}
+
+	.search-bar {
+		width: 100%;
+
+		.form-control {
+			color: #27293759 !important;
+			border-right:0  !important;; // 清空右邊線條樣式
+		}
+		.input-group-text {
+			background: none;
+		}
+	}
+
+	.navbar-nav {
+		display: flex !important;
+		flex-direction: column !important; 
+	}
+
+	.navbar-item {
+		width: 100% !important;
+		margin-top: 12px !important;
+		margin-bottom: 12px !important;
+	}
+
+	/** 選單的最左邊及最右邊距離歸零 **/
+	.navbar-item:first-child {
+		margin-top: 24px !important;
+	}
+
+	.navbar-item:last-child {
+		 margin-bottom: 0 !important;
+	}
+
+	.navbar-link {
+		// display: block !important;
+		color: $gray-500 !important;
+		font-size: 16px !important;
+        font-weight: 700 !important;
+
+	}
+
+	.navbar-link:hover {
+		color: $white !important;
+        background-color: $accent-200 !important;
+        border-radius: 100px !important;
+	}
+
+    .navbar-link:active, .navbar-link.active {
+		color: $white !important;
+        background-color: $accent-200 !important;
+        border-radius: 100px !important;
+	}
+
+
+	// min-width: 576px
+	@include media-breakpoint-up(sm) {
+		
+	}
+
+	// min-width: 768px
+	@include media-breakpoint-up(md) {
+
+	}
+
+	// min-width: 992px
+	@include media-breakpoint-up(lg) {
+		.search-bar {
+			width: 276px;
+			margin-left: 41px;
+	
+			.form-control {
+				color: #27293759 !important;
+				border-right:0  !important;; // 清空右邊線條樣式
+			}
+			.input-group-text {
+				background: none;
+			}
+		}
+
+		.navbar-nav {
+			display: flex !important;
+			flex-direction: row !important;
+			flex-wrap: no-wrap  !important;; /*(default)*/      /* 預設值，不斷行  ＊常用 */
+			justify-content: space-between !important;
+			align-items: center !important;
+			// margin-top: 25px !important;
+			// margin-bottom: 25px !important;
+		}
+	
+		.navbar-item {
+			width: auto !important;
+
+			margin-top: 0 !important;      // 清空
+			margin-bottom: 0 !important;   // 清空
+
+			margin-left: 10px !important;
+			margin-right: 10px !important;
+		}
+	
+		/** 選單的最左邊及最右邊距離歸零 **/
+		 .navbar-item:first-child {
+			margin-top: 0 !important;      // 清空
+			margin-left: 0 !important;
+		} 
+	
+		.navbar-item:last-child {
+			margin-right: 0 !important;
+		}
+
+		.navbar-link {
+			display: block !important;
+			padding: 8px 20px !important;
+		}
+	}
+}

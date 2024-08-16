@@ -1,41 +1,41 @@
 /* 版面除錯用 */
 * {
-	outline: 1px dotted green;
+	// outline: 2px dotted green;
 }
 
 img {
-	min-width: 100px;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
+a {
+  color: inherit;
+  display: inline-block;
+}
 
-  
-  img {
-	max-width: 100%;
-	height: auto;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  // margin: 0;
+	// padding: 0;
+	// border: 0;
+	// font-size: 100%;
+	// font: inherit;
+	// vertical-align: baseline;
+}
+
+p {
+  letter-spacing: 0.05em;
+}
+/* 
+.bi {
+  font-size: 1.25rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 1.5rem;
   }
-  
-  a {
-	color: inherit;
-	display: inline-block;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-	letter-spacing: 0.1em;
-  }
-  
-  p {
-	letter-spacing: 0.05em;
-  }
-  
-/*   .bi {
-	font-size: 1.25rem;
-	@include media-breakpoint-up(lg) {
-	  font-size: 1.5rem;
-	}
-  } */
+} */

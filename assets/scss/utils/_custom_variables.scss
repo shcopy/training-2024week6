@@ -1,3 +1,6 @@
+// Color system
+
+// scss-docs-start theme-color-variables
 $success:       #2CC585;
 $info:          #4A72FF;
 $warning:       #FFB054;
@@ -21,3 +24,54 @@ $gray-300  : #ADB5BD;
 $gray-400  : #6C757D;
 $gray-500  : #343A40;
 $gray-600  : #212529;
+// scss-docs-end theme-color-variables
+
+
+// Body
+//
+// Settings for the `<body>` element.
+$body-color:                $gray-500 !default;   // 整體文字顏色
+$body-bg:                   $primary-100 !default;   // 網頁背景色
+
+// Links
+//
+// Style anchor elements.
+
+$link-decoration:                         none !default;  // a 標籤文字下方線條
+
+
+// Paragraphs
+//
+// Style p element.
+
+$paragraph-margin-bottom:   0 !default;  // 清除 <p> 文字標籤下方空間
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// scss-docs-start font-variables
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      "Noto Serif TC", Rotobo, Arial, sans-serif !default; 
+
+// $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+// // stylelint-enable value-keyword-case
+// $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
+// $font-family-code:            var(--#{$prefix}font-monospace) !default;
+
+// $font-weight-lighter:         lighter !default;
+// $font-weight-light:           300 !default;
+// $font-weight-normal:          400 !default;
+// $font-weight-medium:          500 !default;
+// $font-weight-semibold:        600 !default;
+$font-weight-bold:            900 !default;
+// $font-weight-bolder:          bolder !default;
+
+// $font-weight-base:            $font-weight-normal !default;
+
+
+// scss-docs-end font-variables
+
+// scss-docs-start headings-variables
+$headings-margin-bottom:      0 !default;  // 清除 <h1>~<h6> 標籤文字標籤下方空間
+// scss-docs-end headings-variables
