@@ -1,12 +1,12 @@
 /* 版面除錯用 */
 * {
-	outline: 2px dotted green;
+	// outline: 2px dotted green;
 }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 a {
   color: inherit;
@@ -25,3 +25,9 @@ h6 {
 p {
   letter-spacing: 0.05em;
 }
+
+/* ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} */

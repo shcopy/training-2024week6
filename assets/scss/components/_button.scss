@@ -8,19 +8,21 @@
     font-weight: 700 !important;
 }
 
-.btn-sm {
-    // min-width: 576px
-    @include media-breakpoint-up(sm) {
-        font-size: 16px;
+
+// min-width: 576px
+@include media-breakpoint-up(sm) {
+    .btn-sm {
+        font-size: 16px !important;
         font-weight: 700 !important;
         padding: 12px 20px !important;
     }
 }
 
-.btn-lg {
-    // min-width: 992px
-    @include media-breakpoint-up(lg) {
-        font-size: 20px;
+
+// min-width: 992px
+@include media-breakpoint-up(lg) {
+    .btn-lg {
+        font-size: 20px !important;
         font-weight: 900 !important;
         padding: 16px 24px !important;
     }
@@ -35,20 +37,6 @@
     align-items: center !important; 
     justify-content: center !important; 
     gap: 8px !important;
-
-    // min-width: 576px
-    @include media-breakpoint-up(sm) {
-        font-size: 16px !important;
-        font-weight: 700 !important;
-        padding: 12px 20px !important;
-    }
-
-    // min-width: 992px
-    @include media-breakpoint-up(lg) {
-        font-size: 24px !important;
-        font-weight: 900 !important;
-        padding: 16px 24px !important;
-    }
 }
 
 

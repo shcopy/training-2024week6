@@ -1,82 +1,192 @@
-/******* start of slider *******/ 
+/******* start of slider *******/
 .slider {
-		padding-top: 80px;
-		padding-bottom: 80px;
 
-	.slider_inner {
-    position: relative;  // 定位點
-  }
+	.container {
+		padding-left: 0; // 清空左邊距離
+		padding-right: 0; // 清空右邊距離
+	}
 
-  .slider_text {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* 完全置中對齊 */
-    text-align: center;
-  }
-	
-  // min-width: 576px
-  @include media-breakpoint-up(sm) {}
-  
-  // min-width: 768px
-  @include media-breakpoint-up(md) {}
-  
-  // min-width: 992px
-  @include media-breakpoint-up(lg) {
-    .slider_text {
-      position: absolute;
-      width: 100%;
-      top: 50%;
-      text-align: left;
-      margin-left: 40px;
-    }
-  }
+	.slider-inner {
+
+		position: relative;
+		width: auto;
+		height: 551px;
+
+		img {
+			max-width: auto;
+			height: 551px;
+			object-fit: cover;
+		}
+	}
+
+	.slider-text {
+		position: absolute;
+		width: 100%;
+		height: auto;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+		margin-bottom: 48px;
+		/*
+    說明：
+    水平靠下：使用 bottom: 0; 將內層 div 對齊到外層 div 的底部。
+    垂直置中：使用 left: 50%; 和 transform: translateX(-50%); 使內層 div 水平置中。
+    */
+	}
+
+	// min-width: 576px
+	@include media-breakpoint-up(sm) {}
+
+	// min-width: 768px
+	@include media-breakpoint-up(md) {
+		.container {
+			padding-left: 12px; // 左邊距離
+			padding-right: 12px; // 右邊距離
+		}
+	}
+
+	// min-width: 992px
+	@include media-breakpoint-up(lg) {
+
+
+		.slider-inner {
+			// padding-top: 80px;
+			// padding-bottom: 80px;
+
+			position: relative;
+			width: auto;
+			height: 621px;
+
+			img {
+				width: auto;
+				height: 621px;
+				object-fit: cover;
+			}
+		}
+
+		.slider-text {
+			position: absolute;
+			width: 100%;
+			height: auto;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			text-align: left;
+			padding-left: 60px;
+			/*
+      靠左垂直置中：
+      內層 div 使用 top: 50%; 和 transform: translateY(-50%); 
+      來實現垂直置中，並使用 left: 0; 靠左對齊。
+      */
+		}
+	}
 }
-
 /******* end of slider *******/
 
 
 /******* start of hot-topic *******/
 .hot-topic {
 
-  padding-top: 80px;
-  padding-bottom: 80px;
+	.hot-topic-inner {}
 
-  .hot-topic_inner {
+	.card {
+		// height: 200px;
+		// background-size: cover;
 
-  }
-  
-  .card {
-    // height: 200px;
-    // background-size: cover;
+		// bootstrap 樣式清空
+		border-radius: 0 !important;
+		border-width: 0 !important;
 
-    // bootstrap 樣式清空
-    border-radius: 0 !important;
-    border-width: 0 !important;
+		img {
+			border-radius: 20px 0 20px 0 !important;
+		}
+	}
 
-    img {
-      border-radius: 20px 0 20px 0px !important;
-    }
-   }
-  
-  .card::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(33, 37, 41, 0.4);
-    opacity: 0;
-    transition: opacity 0.3s;
-    border-radius: 20px 0 20px 0px !important;
-    border-width: 0 !important;
-  }
-  
-  .card:hover::after {
-    opacity: 1;
-    cursor: pointer;
-  }
+	.card::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(33, 37, 41, 0.4);
+		opacity: 0;
+		transition: opacity 0.3s;
+		border-radius: 20px 0 20px 0 !important;
+		border-width: 0 !important;
+	}
+
+	.card:hover::after {
+		opacity: 1;
+		cursor: pointer;
+	}
 }
 /******* end of hot-topic *******/
+
+
+/******* start of major-event *******/
+.major-event {
+	background-color: $primary-200;
+
+	.major-event-inner {
+
+		h3 {
+			color: $accent-200;
+		}
+
+		.event-list {
+			width: 254px;
+			list-style: none; // 清除預設樣式
+			margin: 0 auto; // 清除預設樣式
+			padding: 0; // 清除預設樣式
+
+
+			.event-item {
+				display: flex;
+				font-weight: 600;
+				color: $gray-400;
+				margin-bottom: 16px;
+			}
+		}
+	}
+
+	// min-width: 576px
+	@include media-breakpoint-up(sm) {}
+
+	// min-width: 768px
+	@include media-breakpoint-up(md) {}
+
+	// min-width: 992px
+	@include media-breakpoint-up(lg) {
+		.major-event-inner {
+
+			h3 {
+				color: $primary-400;
+			}
+
+		}
+	}
+
+}
+
+/******* end of major-event *******/
+
+
+/******* start of contact-me *******/
+.contactme {
+	.contactme-inner {
+
+  }
+
+	// min-width: 576px
+	@include media-breakpoint-up(sm) {}
+
+	// min-width: 768px
+	@include media-breakpoint-up(md) {}
+
+	// min-width: 992px
+	@include media-breakpoint-up(lg) {}
+}
+
+/******* end of contact-me *******/

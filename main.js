@@ -12,16 +12,14 @@ import './node_modules/aos/dist/aos.css';
 import jQuery from 'jquery';
 window.$ = jQuery;
 
-
-jQuery(".navbar-toggler").click(function () {
+/* jQuery(".navbar-toggler").click(function () {
   //jQuery(".btn").toggleClass("active");
   jQuery(".hamburger-icon").toggleClass("close");
   // jQuery(".hamburger-icon").css("display","none");
   jQuery(".closure").toggleClass("close");
   // jQuery(".closure").css("display","none");
   //jQuery("ul").toggleClass("close");
-});
-
+}); */
 
 // JavaScript
 // News swiper

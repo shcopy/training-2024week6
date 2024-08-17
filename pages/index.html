@@ -8,24 +8,22 @@
 
 	</head>
 	<body>
-
 		<header>
-
 			<%- include('./layout/nav'); -%>
 
 			<!-- start of slider -->
-			<div class="slider">
+			<div class="slider py-0 py-lg-11">
 				<div class="container">
-					<div class="slider_inner">
+					<div class="slider-inner">
 						<picture>
 							<source srcset="../assets/images/banner.png" media="(min-width: 992px)"/>
 							<img src="../assets/images/banner-sm.png" alt="banner" class="w-100"/>
 						</picture>
 
-						<div class="slider_text">
+						<div class="slider-text">
 							<p class="text-white mb-2 mb-lg-3">獻給新世代的生活風格誌</p>
 							<h2 class="text-white mb-5 mb-lg-6">一起探索生活的無限可能</h2>
-							<button type="button" class="btn btn-custom-green">
+							<button type="button" class="btn btn-custom-green btn-sm btn-lg">
 								馬上訂閱<span class="material-symbols-outlined">arrow_right_alt</span>
 							</button>
 						</div>
@@ -38,8 +36,8 @@
 		<main>
 			<!-- start of hot-topic -->
 			<section>
-				<div class="hot-topic">
-					<div class="container hot-topic_inner">
+				<div class="hot-topic py-9 py-lg-11">
+					<div class="container hot-topic-inner">
 						<h2 class="fs-4 fs-lg-2 mb-4">熱門主題</h2>
 						<div class="row g-4">
 							<div class="col-12 col-md-6 col-lg-3">
@@ -125,39 +123,78 @@
 			<!-- end of hot-topic -->
 
 			<section>
-				<div class="container">
-					<h2 class="fs-4 fs-lg-2 mb-4">精選文章</h2>
+				<div class="py-9 py-lg-11">
+					<div class="container">
+						<h2 class="fs-4 fs-lg-2 mb-4">精選文章</h2>
+					</div>
 				</div>
 			</section>
 
 			<section>
-				<div class="container">
-					<h2 class="fs-4 fs-lg-2 mb-4">母親節強檔活動</h2>
+				<div class="major-event py-9 py-lg-11">
+					<div class="container major-event-inner">
+						<h3 class="fs-6 fs-lg-4 text-center mb-5">\ 母親節強檔活動 / </h3>
+						<h2 class="fs-4 fs-lg-2 text-center mb-5">家庭訂閱方案限時 7 折</h2>
+						<ul class="event-list">
+							<li class="event-item"><span class="material-symbols-outlined me-3">check</span>每月最新文章無限閱讀</li>
+							<li class="event-item"><span class="material-symbols-outlined me-3">check</span>專屬會員限定內容</li>
+							<li class="event-item"><span class="material-symbols-outlined me-3">check</span>定期電子報</li>
+							<li class="event-item"><span class="material-symbols-outlined me-3">check</span>年度精選禮物</li>
+							<li class="event-item"><span class="material-symbols-outlined me-3">check</span>24 /7 優先客戶服務</li>
+							<li class="event-item"><span class="material-symbols-outlined me-3">check</span>為每個成員量身打造專屬行程</li>
+						</ul>
+						<div class="text-center mt-6 mt-lg-8">
+							<button type="button" class="btn btn-custom-green btn-sm btn-lg">
+								我想了解
+							</button>
+						</div>
+					</div>
 				</div>
 			</section>
 
 			<section>
-				<div class="container">
-					<h2 class="fs-4 fs-lg-2 mb-4">大家都在看</h2>
+				<div class="py-9 py-lg-11">
+					<div class="container">
+						<h2 class="fs-4 fs-lg-2 mb-4">大家都在看</h2>
+					</div>
 				</div>
 			</section>
 
 			<section>
-				<div class="container">
-					<h2 class="fs-4 fs-lg-2 mb-4">品味生活</h2>
+				<div class="py-9 py-lg-11">
+					<div class="container">
+						<h2 class="fs-4 fs-lg-2 mb-4">品味生活</h2>
+					</div>
 				</div>
 			</section>
 
 			<section>
-				<div class="container">
-					<h2 class="fs-4 fs-lg-2 mb-4">Vivre 給你意想不到的生活風格提案</h2>
+				<div class="py-9 py-lg-11">
+					<div class="container">
+						<h2 class="fs-4 fs-lg-2 mb-4">Vivre 給你意想不到的生活風格提案</h2>
+					</div>
 				</div>
 			</section>
 
 			<section>
-				<div class="container">
-					<h2 class="fs-4 fs-lg-2 mb-4">想看什麼主題由你決定！</h2>
-				</div>
+					<div class="contactme py-9 py-lg-11">
+						<div class="container contactme-inner">
+							<div class="row">
+								<div class="col-lg-7 mb-4 mb-lg-0">
+									<h2 class="fs-4 fs-lg-2 text-center text-lg-start">想看什麼主題由你決定！</h2>
+								</div>
+								<div class="col-lg-5">
+									<div class="d-flex flex-column align-items-center align-items-lg-end ">
+										<h3 class="fs-5 fs-lg-4 mb-7 mb-lg-4">歡迎投稿與我們分享</h3>
+										<button type="button" class="btn btn-custom-green btn-sm btn-lg">
+											聯絡我們
+										</button>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
 			</section>
 		</main>
 		<%- include('./layout/footer'); -%>
