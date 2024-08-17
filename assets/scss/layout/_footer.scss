@@ -1,10 +1,12 @@
 .footer{
-  // background: $gray-200;
+
 }
 
 .footer-inner {
   padding-top: 26px;
   padding-bottom: 26px;
+
+  border-top: 1px solid $gray-300 !important;
 }
 
 .footer-inner p {
