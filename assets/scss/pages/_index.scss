@@ -4,64 +4,33 @@
 		padding-bottom: 80px;
 
 	.slider_inner {
+    position: relative;  // 定位點
+  }
 
-    background-image: url('/assets/images/banner.png') ;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-		height: 621px;
-
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		
-		text-align: left;
-
-    .slider-info {
-      margin-left: 61px;
-
-      h2 {
-        color: $white;
-        font-size: 40px;
-        line-height: 1.2;
-        font-weight: 900;
-        margin-bottom: 24px;
-      }
+  .slider_text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 完全置中對齊 */
+    text-align: center;
+  }
+	
+  // min-width: 576px
+  @include media-breakpoint-up(sm) {}
   
-      p {
-        color: $white;
-        font-size: 20px;
-        line-height: 1.2;
-        font-weight: 900;
-        margin-bottom: 12px;
-      }
+  // min-width: 768px
+  @include media-breakpoint-up(md) {}
+  
+  // min-width: 992px
+  @include media-breakpoint-up(lg) {
+    .slider_text {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      text-align: left;
+      margin-left: 40px;
     }
-	}
-
-  // max-width:768 (寬度<= 768)
-  @include media-breakpoint-down(md) {
-
-      .slider_inner {
-          // padding-top: 144px;
-          // padding-bottom: 144px;
-          background-image: url('/assets/images/banner-sm.png');
-  
-          height: 551px;
-          text-align: center;
-  
-          .slider-info {
-            margin-left: 0px; // 清空
-            h2 {
-                font-size: 28px;
-                margin-bottom: 8px;
-            }
-            p {
-                font-size: 16px;
-                margin-bottom: 20px;
-            }
-          }
-      }
   }
 }
 
@@ -77,8 +46,7 @@
   .hot-topic_inner {
 
   }
-
-
+  
   .card {
     // height: 200px;
     // background-size: cover;
@@ -88,7 +56,6 @@
     border-width: 0 !important;
 
     img {
-      width: 100%;
       border-radius: 20px 0 20px 0px !important;
     }
    }

@@ -1,10 +1,8 @@
-// Color system
-
-// scss-docs-start theme-color-variables
-$success:       #2CC585;
-$info:          #4A72FF;
-$warning:       #FFB054;
-$danger:        #D65F5F;
+// -- 設計稿顏色系統 --
+$success:     #2CC585;
+$info:        #4A72FF;
+$warning:     #FFB054;
+$danger:      #D65F5F;
 
 // primary
 $primary-100: #FFFDF5;
@@ -24,54 +22,78 @@ $gray-300  : #ADB5BD;
 $gray-400  : #6C757D;
 $gray-500  : #343A40;
 $gray-600  : #212529;
-// scss-docs-end theme-color-variables
+
+// ## 全域樣式 
+// - 整體網頁背景色
+$body-bg:                   $primary-100;   
+// - 整體文字顏色
+$body-color:                $gray-500;     
+
+// - 清除文字標籤下方空間
+$headings-margin-bottom:      0;  // 清除 <h1>~<h6> 標籤文字標籤下方空間
+$paragraph-margin-bottom:     0;    // 清除 <p> 文字標籤下方空間
+
+// - a 標籤文字下方線條
+$link-decoration:                         none;  // a 標籤文字下方線條
+
+// - 文字
+// 基本字體
+$font-family-sans-serif:    "Noto Serif TC", Rotobo, Arial, sans-serif; 
+$font-family-base:          $font-family-sans-serif;
+
+// 內文字重
+$font-weight-base:            600;
+
+// 內文行高
+$line-height-base:            1.5;
+
+// 標題字重
+$headings-font-weight:        900;
+
+// 標題行高
+$headings-line-height:        1.2;
 
 
-// Body
-//
-// Settings for the `<body>` element.
-$body-color:                $gray-500 !default;   // 整體文字顏色
-$body-bg:                   $primary-100 !default;   // 網頁背景色
+// ## 修改元件樣式
+// ### Button
+// - 字重
+$btn-font-weight:             700;
 
-// Links
-//
-// Style anchor elements.
+$btn-color:                   $accent-200;
 
-$link-decoration:                         none !default;  // a 標籤文字下方線條
+// - 間距
+$btn-padding-y:               .875rem;
+$btn-padding-x:               1.375rem;
+$btn-font-size:               1rem;
 
+$btn-padding-y-sm:              .75rem;
+$btn-padding-x-sm:            1.375rem;
+$btn-font-size-sm:                1rem;
 
-// Paragraphs
-//
-// Style p element.
+$btn-padding-y-lg:            1rem;
+$btn-padding-x-lg:            1.5rem;
+$btn-font-size-lg:            1.25rem;
 
-$paragraph-margin-bottom:   0 !default;  // 清除 <p> 文字標籤下方空間
+// - 圓角
+$btn-border-radius:           50rem;
 
-// Typography
-//
-// Font, line-height, and color for body text, headings, and more.
-
-// scss-docs-start font-variables
-// stylelint-disable value-keyword-case
-$font-family-sans-serif:      "Noto Serif TC", Rotobo, Arial, sans-serif !default; 
-
-// $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-// // stylelint-enable value-keyword-case
-// $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
-// $font-family-code:            var(--#{$prefix}font-monospace) !default;
-
-// $font-weight-lighter:         lighter !default;
-// $font-weight-light:           300 !default;
-// $font-weight-normal:          400 !default;
-// $font-weight-medium:          500 !default;
-// $font-weight-semibold:        600 !default;
-$font-weight-bold:            900 !default;
-// $font-weight-bolder:          bolder !default;
-
-// $font-weight-base:            $font-weight-normal !default;
+// - disabled
+$btn-disabled-opacity:        1; 
 
 
-// scss-docs-end font-variables
+// 表單 Input
+// padding
+$input-btn-padding-y:         .75rem;
+$input-btn-padding-x:         1rem;
 
-// scss-docs-start headings-variables
-$headings-margin-bottom:      0 !default;  // 清除 <h1>~<h6> 標籤文字標籤下方空間
-// scss-docs-end headings-variables
+// 字重：
+$input-font-weight:           600;
+
+// 提示字顏色
+$input-placeholder-color:     $gray-300; 
+
+// 背景色
+$input-bg:                    $gray-100;
+
+// 圓角
+$input-border-radius:         0.5rem;

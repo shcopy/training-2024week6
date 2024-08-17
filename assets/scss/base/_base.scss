@@ -1,6 +1,6 @@
 /* 版面除錯用 */
 * {
-	// outline: 2px dotted green;
+	outline: 2px dotted green;
 }
 
 img {
@@ -20,22 +20,8 @@ h4,
 h5,
 h6 {
   letter-spacing: 0.1em;
-  line-height: 1.2;
-  // margin: 0;
-	// padding: 0;
-	// border: 0;
-	// font-size: 100%;
-	// font: inherit;
-	// vertical-align: baseline;
 }
 
 p {
   letter-spacing: 0.05em;
 }
-/* 
-.bi {
-  font-size: 1.25rem;
-  @include media-breakpoint-up(lg) {
-    font-size: 1.5rem;
-  }
-} */
