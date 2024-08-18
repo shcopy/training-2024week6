@@ -10,7 +10,69 @@
   <body>
     <%- include('./layout/nav'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
+    <div class="login">
+      <div class="container login-inner">
+        <div class="row">
+          <div class="col-lg-6 mx-auto">
+            <form class="bg-white border border-1 border-primary-300 rounded-4 p-6 p-lg-8" action="">
+              <fieldset>
+                <legend class="mb-4">
+                    <h2 class="fs-4 text-accent-200">註冊</h2> 
+                </legend>
+
+              <div class="mb-4">
+                <label for="username" class="form-label fw-bold">會員帳號</label>
+                <input type="text" class="form-control form-control-lg border-0" id="username" name="username" placeholder="請輸入會員帳號">
+              </div>
+
+              <div class="mb-4">
+                <label for="password" class="form-label fw-bold">密碼</label>
+                <input type="password" class="form-control form-control-lg border-0" id="password" name="password" placeholder="請輸入密碼">
+              </div>
+
+              <div class="mb-4">
+                <label for="email" class="form-label fw-bold">電子信箱</label>
+                <input type="enmail" class="form-control form-control-lg border-0" id="email" name="email" placeholder="請輸入電子信箱">
+              </div>
+
+              <div class="d-grid mb-8">
+                <button type="button" class="btn btn-custom-green btn-sm">
+                  立即註冊
+                  <span class="material-symbols-outlined">arrow_right_alt</span>
+                </button>
+              </div>
+
+              <div class="mb-8 text-center">
+                <h6><span class="title-text">或以其他方式註冊</span></h6>
+              </div>
+
+              <div class="d-grid mb-2">
+                <button type="button" class="btn btn-custom-gray btn-sm">
+                  <img src="../assets/images/icons-google.png" class="border border-success" alt="">
+                  <span class="text-gray-500 ms-3">
+                    使用 Google 註冊
+                  </span>
+                </button>
+              </div>
+
+              <div class="d-grid mb-8">
+                <button type="button" class="btn btn-custom-gray btn-sm">
+                  <img src="../assets/images/icons-facebook.png" class="border border-success" alt="">
+                  <span class="text-gray-500  ms-3">
+                    使用 Facebook 註冊
+                  </span>
+                </button>
+              </div>
+
+              <div class="text-center">
+                已經是會員了？ <a class="btn-link text-accent-200 ms-3" href="./login.html">點此登入</a>
+              </div>
+            </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <%- include('./layout/footer'); -%>
 

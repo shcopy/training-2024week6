@@ -1,0 +1,20 @@
+.subscription {
+	.subscription-inner {}
+
+    .card {
+        height: 379px !important;
+    }
+
+	// min-width: 576px
+	@include media-breakpoint-up(sm) {}
+
+	// min-width: 768px
+	@include media-breakpoint-up(md) {}
+
+	// min-width: 992px
+	@include media-breakpoint-up(lg) {
+        .card {
+            height: 696px !important;
+        }
+    }
+}

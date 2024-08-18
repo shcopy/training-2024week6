@@ -1,0 +1,17 @@
+.custom-search-bar {
+    width: 276px;
+    margin-left: 41px;
+
+    .form-control {
+        color: #27293759 !important;
+        background-color: $white !important;
+        border-right: 0  !important;          // 清空右邊線條樣式
+        border-radius: 50rem;
+    }
+    
+    .input-group-text {
+        background: $white !important;
+        border-left: 0  !important;     // 清空右邊線條樣式
+        border-radius: 50rem;
+    }
+}

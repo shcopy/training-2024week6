@@ -84,18 +84,6 @@
 			border-bottom: 1px solid $gray-300 !important;
 		}
 
-		.search-bar {
-			width: 276px;
-			margin-left: 41px;
-	
-			.form-control {
-				color: #27293759 !important;
-				border-right:0  !important;; // 清空右邊線條樣式
-			}
-			.input-group-text {
-				background: none;
-			}
-		}
 
 		.navbar-nav {
 			display: flex !important;

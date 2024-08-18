@@ -6,8 +6,8 @@
     opacity: 1 !important;
     letter-spacing: 10% !important;
     font-weight: 700 !important;
+    display: flex !important; 
 }
-
 
 // min-width: 576px
 @include media-breakpoint-up(sm) {
@@ -17,7 +17,6 @@
         padding: 12px 20px !important;
     }
 }
-
 
 // min-width: 992px
 @include media-breakpoint-up(lg) {
@@ -39,29 +38,33 @@
     gap: 8px !important;
 }
 
-
-
-
-
 .btn-custom-green:hover {
     background-color: $accent-300 !important;
+    color: $white !important;  
 }
 
 .btn-custom-green:active {
     background-color: $accent-300 !important;
+    color: $white !important;  
 }
 
 .btn-custom-green:disabled {
     background-color: $gray-200 !important;
+    color: $white !important;  
 }
 
 
-
-/* custom gray style */
+/* custom green style */
 .btn-custom-gray {
     background-color: $gray-100 !important; 
-    color: $gray-400 !important;             
+    color: $gray-400 !important;   
+    
+    display: inline-flex !important;
+    align-items: center !important; 
+    justify-content: center !important; 
+    gap: 8px !important;
 }
+
 
 .btn-custom-gray:hover {
     background-color: $gray-200 !important;
