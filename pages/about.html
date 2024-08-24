@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>內容訂閱網站</title>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>內容訂閱網站</title>
 
-  </head>
-  <body>
-    <%- include('./layout/nav'); -%>
+	</head>
+	<body>
+		<%- include('./layout/nav'); -%>
 
-    <div class="container">
-      <h1 class="index-title">我是首頁</h1>
-    </div>
+		<div class="about">
+			<div class="container about-inner py-10 py-lg-11">
 
-    <%- include('./layout/footer'); -%>
+				<nav aria-label="breadcrumb mt-5 mt-lg-5">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item">
+							<a href="#">首頁</a>
+						</li>
+						<li class="breadcrumb-item active" aria-current="page">關於我們</li>
+					</ol>
+				</nav>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+				<h2 class="fs-4 fs-lg-2 mb-8 mb-lg-10">關於我們</h2>
+
+			</div>
+
+			<%- include('./layout/footer'); -%>
+
+			<script type="module" src="../main.js"></script>
+		</body>
+	</body>
 </html>

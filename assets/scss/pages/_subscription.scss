@@ -1,17 +1,6 @@
 .subscription {
 	.subscription-inner {}
 
-/*     .btn {
-        border: 0 !important;
-        padding: 12px 20px !important;
-    
-        border-radius: 0px !important;    
-        opacity: 1 !important;
-        letter-spacing: 10% !important;
-        font-weight: 700 !important;
-        display: flex !important; 
-    } */
-
 	// min-width: 576px
 	@include media-breakpoint-up(sm) {}
 

@@ -21,6 +21,38 @@ window.$ = jQuery;
   //jQuery("ul").toggleClass("close");
 }); */
 
+
+const swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
+
+const swiper2 = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+
+
 // JavaScript
 // News swiper
 const newsSwiper = new Swiper(".newsSwiper", {
@@ -47,175 +79,37 @@ const newsSwiper = new Swiper(".newsSwiper", {
   })
   
   
-  // Comment swiper
-  const commentSwiper = new Swiper(".commentSwiper", {
+  // furtherReading Swiper
+  const furtherReadingSwiper = new Swiper(".furtherReadingSwiper", {
     slidesPerView: 1,
     spaceBetween: 24,
     loop: true,
-  
-    breakpoints: {
+
+    // Responsive breakpoints
+ /*    breakpoints: {
       768: {
-        slidesPerView: 2,
-        spaceBetween: 24,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 24,
+        slidesPerView: 1,
+        spaceBetween: 24
       }
-    },
+    }, */
   
     autoplay: {
-      delay: 2500,
+      delay: 3000,
       disableOnInteraction: false,
     },
   
-    navigation: {
+    /* navigation: {
       nextEl: ".swiper-button-next-comment",
       prevEl: ".swiper-button-prev-comment",
       clickable: true,
-    },
+    }, */
   
-    pagination: {
+   /*  pagination: {
       el: ".swiper-pagination",
       clickable: true,
-    },
+    }, */
   });
-  
-  
-  // playlist-1
-  const swOne = new Swiper(".swOne", {
-    slidesPerView: 1,
-    spaceBetween: 24,
-    loop: true,
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 24,
-      },
-      992: {
-        slidesPerView: 4,
-        spaceBetween: 24,
-      }
-    },
-    navigation: {
-      nextEl: ".swiper-button-next-swOne",
-      prevEl: ".swiper-button-prev-swOne",
-      clickable: true,
-    },
-  });
-  
-  // playlist-2
-  const swTwo = new Swiper(".swTwo", {
-    slidesPerView: 1,
-    spaceBetween: 24,
-    loop: true,
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 24,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 24,
-      }
-    },
-    navigation: {
-      nextEl: ".swiper-button-next-swTwo",
-      prevEl: ".swiper-button-prev-swTwo",
-      clickable: true,
-    },
-  });
-  
-  // playlist-3
-  const swThree = new Swiper(".swThree", {
-    slidesPerView: 1,
-    spaceBetween: 24,
-    loop: true,
-  
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 24,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 24,
-      }
-    },
-    navigation: {
-      nextEl: ".swiper-button-next-swThree",
-      prevEl: ".swiper-button-prev-swThree",
-      clickable: true,
-    },
-  });
-  
-  // playlist-4
-  const swFour = new Swiper(".swFour", {
-    slidesPerView: 1,
-    spaceBetween: 24,
-    loop: true,
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 24,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 24,
-      }
-    },
-    navigation: {
-      nextEl: ".swiper-button-next-swFour",
-      prevEl: ".swiper-button-prev-swFour",
-      clickable: true,
-    },
-  });
-  
-  // Search swiper
-  const searchSwiper = new Swiper(".searchSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 24,
-    loop: true,
-  
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 24,
-      },
-      992: {
-        slidesPerView: 4,
-        spaceBetween: 24,
-      }
-    },
-  
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-  
-    navigation: {
-      nextEl: ".swiper-button-next-search",
-      prevEl: ".swiper-button-prev-search",
-      clickable: true,
-    },
-  
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: true,
-    // },
-  });
-  
-  //scrollbar
-  const hitSwiper = new Swiper(".hitSwiper", {
-    spaceBetween: 24,
-    //滑鼠中間滾輪可滑動
-    mousewheel: true,
-    scrollbar: {
-      el: ".swiper-scrollbar",
-      draggable: true
-    },
-    slidesPerView: "auto",
-  });
+ 
   
   // aos
   AOS.init();

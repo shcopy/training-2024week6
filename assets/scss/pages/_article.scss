@@ -1,0 +1,152 @@
+.article {
+    .article-inner {
+
+        ul, li {
+            list-style: none !important; // 清空預設樣式
+            margin: 0;
+            padding: 0;
+        }
+
+        .article-header {
+            margin-bottom: 28px;
+
+            .article-title {
+                font-size: 24px !important;
+                color: $gray-500 !important;
+                margin-bottom: 8px !important;
+            }
+    
+            .article-date {
+                color: $gray-300;
+                font-weight: 700;
+            }
+        }
+
+        .article-body {
+            margin-bottom: 28px;
+
+            p {
+                color: $gray-500;
+                font-weight: 600;
+                margin-bottom: 24px;
+            }
+    
+            picture {
+                margin-bottom: 24px;
+            }
+        }
+
+        /* 延伸閱讀 */
+        .further-reading {
+            .further-reading-title {
+                font-size: 24px;
+                color: $gray-500;
+                margin-bottom: 20px;
+            }
+
+
+        }
+
+        // min-width: 576px
+        @include media-breakpoint-up(sm) {}
+
+        // min-width: 768px
+        @include media-breakpoint-up(md) {}
+
+        // min-width: 992px
+        @include media-breakpoint-up(lg) {
+
+            .article-header {
+                margin-bottom: 40px;
+
+                .article-title {
+                    font-size: 40px !important;
+                    color: $gray-500 !important;
+                    margin-bottom: 16px !important;
+                }
+    
+                .article-date {
+                    color: $gray-300;
+                    font-weight: 700;
+                }
+            }
+
+            .article-body {
+                margin-bottom: 40px;
+
+                p {
+                    color: $gray-500;
+                    font-weight: 600;
+                    margin-bottom: 40px;
+                }
+
+                picture {
+                    margin-bottom: 40px;
+                }
+            }
+
+            /* 延伸閱讀 */
+            .further-reading {
+                .further-reading-title {
+                    font-size: 32px;
+                    color: $gray-500;
+                    margin-bottom: 40px;
+                }
+
+                .card {
+                    border: 0 !important;             // 複寫預設樣式
+            
+                    .card-body {
+                        padding: 0 !important;        // 複寫預設樣式
+                        margin-left: 24px !important; // 複寫預設樣式
+                        height: 100% !important;
+                        display: flex !important;
+                        flex-direction: column !important;
+                    }
+            
+                    .card-title {
+                        font-size: 20px !important;
+                        font-weight: 900 !important;
+                        color: $gray-500 !important;
+                        margin-bottom: 8px !important;
+                    }
+            
+                    .card-text {
+                        color: $gray-400 !important;
+                    }
+                }
+            }
+        }
+
+        .furtherReadingSwiper {
+
+            .card {
+                border: 0 !important;             // 複寫預設樣式
+            }
+            .card-body {
+                padding: 0 !important;        // 複寫預設樣式
+                margin-top: 15px !important; // 複寫預設樣式
+                height: 100% !important;
+                display: flex !important;
+                flex-direction: column !important;
+            }
+        
+            .card-title {
+                font-size: 20px !important;
+                font-weight: 900 !important;
+                color: $gray-500 !important;
+                margin-bottom: 8px !important;
+            }
+        
+            .card-text {
+                font-weight: 600 !important;
+                color: $gray-400 !important;
+            }
+        }
+
+
+    }
+}
+
+
+

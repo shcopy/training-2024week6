@@ -1,27 +1,27 @@
 // -- 設計稿顏色系統 --
-$success:     #2CC585;
-$info:        #4A72FF;
-$warning:     #FFB054;
-$danger:      #D65F5F;
+$success:     #2CC585 !default;
+$info:        #4A72FF !default;
+$warning:     #FFB054 !default;
+$danger:      #D65F5F !default;
 
 // primary
-$primary-100: #FFFDF5;
-$primary-200: #FFFBE5;
-$primary-300: #E8E3DA;
-$primary-400: #6E6B67;
+$primary-100: #FFFDF5 !default; 
+$primary-200: #FFFBE5 !default;
+$primary-300: #E8E3DA !default;
+$primary-400: #6E6B67 !default;
 
 // accent
-$accent-100: #E0EFDE;
-$accent-200: #569573;
-$accent-300: #406C55;
+$accent-100: #E0EFDE !default;
+$accent-200: #569573 !default;
+$accent-300: #406C55 !default;
 
 // neutral
-$gray-100  : #F8F9FA;
-$gray-200  : #DEE2E6;
-$gray-300  : #ADB5BD;
-$gray-400  : #6C757D;
-$gray-500  : #343A40;
-$gray-600  : #212529;
+$gray-100  : #F8F9FA !default;
+$gray-200  : #DEE2E6 !default;
+$gray-300  : #ADB5BD !default;
+$gray-400  : #6C757D !default;
+$gray-500  : #343A40 !default;
+$gray-600  : #212529 !default;
 
 // ## 全域樣式 
 // - 整體網頁背景色
