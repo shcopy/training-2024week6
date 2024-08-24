@@ -1,0 +1,14 @@
+.pay {
+	.pay-inner {}
+
+	// min-width: 576px
+	@include media-breakpoint-up(sm) {}
+
+	// min-width: 768px
+	@include media-breakpoint-up(md) {}
+
+	// min-width: 992px
+	@include media-breakpoint-up(lg) {
+
+    }
+}

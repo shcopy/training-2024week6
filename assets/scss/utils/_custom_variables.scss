@@ -105,3 +105,8 @@ $input-border-radius:         0.5rem;
 // ### Breadcrumbs
 $breadcrumb-font-size:        1rem;
 $breadcrumb-active-color:     $accent-200;
+
+// scss-docs-start form-check-variables
+$form-check-input-checked-color:          #FFFFFF;
+$form-check-input-checked-bg-color:       $accent-300;
+// scss-docs-end form-check-variables

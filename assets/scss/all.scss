@@ -72,7 +72,7 @@
 // @import "bootstrap/scss/badge";
 // @import "bootstrap/scss/alert";
 // @import "bootstrap/scss/progress";
-// @import "bootstrap/scss/list-group";
+@import "bootstrap/scss/list-group";
 // @import "bootstrap/scss/close";
 // @import "bootstrap/scss/toasts";
 // @import "bootstrap/scss/modal";
@@ -113,3 +113,4 @@
 @import './pages/index.scss';           // custom index
 @import './pages/login.scss';           // custom login
 @import './pages/subscription.scss';    // custom subscription
+@import './pages/pay.scss';             // custom pay

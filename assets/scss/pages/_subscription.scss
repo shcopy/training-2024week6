@@ -2,8 +2,21 @@
 	.subscription-inner {}
 
     .card {
-        height: 379px !important;
+        height: auto !important;
     }
+
+    .btn {
+        border: 0 !important;
+        padding: 12px 20px !important;
+    
+        border-radius: 0px !important;    
+        opacity: 1 !important;
+        letter-spacing: 10% !important;
+        font-weight: 700 !important;
+        display: flex !important; 
+    }
+
+    
 
 	// min-width: 576px
 	@include media-breakpoint-up(sm) {}
@@ -14,7 +27,7 @@
 	// min-width: 992px
 	@include media-breakpoint-up(lg) {
         .card {
-            height: 696px !important;
+            // height: 696px !important;
         }
     }
 }
