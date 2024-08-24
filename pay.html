@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>內容訂閱網站</title>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>付款表單 | 內容訂閱網站</title>
 
-    <script type="module" crossorigin src="/training-2024week6/assets/main-144beca0.js"></script>
-    <link rel="stylesheet" href="/training-2024week6/assets/main-54f7f939.css">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg">
+		<script type="module" crossorigin src="/training-2024week6/assets/main-771fadb1.js"></script>
+		<link rel="stylesheet" href="/training-2024week6/assets/main-277e4559.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg">
 	<div class="container navbar-inner">
 		<a class="navbar-brand" href="./index.html">
 			<svg width="96" height="28" viewbox="0 0 96 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,15 +53,160 @@
 	  </div>
 	</div>
   </nav>
-    <div class="container">
-      <h1 class="index-title">我是首頁</h1>
-    </div>
+		<div class="pay">
+			<div class="container pay-inner py-10 py-lg-11">
 
-    <footer class="footer bg-primary-100">
+				<nav aria-label="breadcrumb mt-2 mt-lg-5">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item">
+							<a href="#">首頁</a>
+						</li>
+						<li class="breadcrumb-item">訂閱方案</li>
+						<li class="breadcrumb-item active" aria-current="page">付款</li>
+					</ol>
+				</nav>
+				<h2 class="fs-4 fs-lg-2 mb-8 mb-lg-9">付款</h2>
+				<form class="" action="">
+					<div class="row">
+						<div class="col-lg-7 mb-6">
+							<div class="bg-white border border-1 border-primary-300 rounded-4 p-6 p-lg-8 mb-6">
+								<fieldset>
+									<legend class="mb-6 mb-lg-8">
+										<h2 class="fs-4">購買人</h2>
+									</legend>
+									<div class="mb-4">
+										<label for="name" class="form-label fw-bold">姓名</label>
+										<input type="text" class="form-control form-control-lg border-0" id="name" name="name" placeholder="請輸入姓名">
+									</div>
+									<div class="mb-4">
+										<label for="password" class="form-label fw-bold">密碼</label>
+										<input type="password" class="form-control form-control-lg border-0" id="password" nanme="password" placeholder="請輸入密碼">
+									</div>
+									<div class="mb-6">
+										<label for="email" class="form-label fw-bold">電子信箱</label>
+										<input type="email" class="form-control form-control-lg border-0" id="email" nanme="email" placeholder="請輸入電子信箱">
+									</div>
+									<div class="">
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" id="remberInfoFieldsetCheck">
+											<label class="form-check-label" for="remberInfoFieldsetCheck">
+												記住我的資訊
+											</label>
+										</div>
+									</div>
+								</fieldset>
+							</div>
+							<div class="bg-white border border-1 border-primary-300 rounded-4 p-6 p-lg-8">
+								<fieldset>
+									<legend class="mb-4">
+										<h2 class="fs-4">付款方式</h2>
+									</legend>
+
+									
+									<div class="mb-8">
+										<div class="col-form-label"><span class="text-newsreader text-gray-500">Pay With</span></div>
+										<div class="form-check">
+											<input class="form-check-input me-2" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+											<label class="form-check-label" for="gridRadios1">
+												信用卡
+											</label>
+										</div>
+									</div>
+
+									<div class="mb-4">
+										<label for="creditcard" class="form-label fw-bold">信用卡號碼</label>
+										<input type="text" class="form-control form-control-lg border-0" id="creditcard" name="creditcard" placeholder="1234 5678 1234 5678">
+									</div>
+									<div class="mb-4">
+										<label for="password" class="form-label fw-bold">密碼</label>
+										<input type="password" class="form-control form-control-lg border-0" id="password" nanme="password" placeholder="請輸入密碼">
+									</div>
+									<div class="row mb-4">
+										<div class="col">
+											<label for="text" class="form-label fw-bold">過期日</label>
+											<input type="text" class="form-control form-control-lg border-0" id="email" nanme="email" placeholder="ＭＭ/YY">
+										</div>
+										<div class="col">
+											<label for="text" class="form-label fw-bold">驗證碼</label>
+											<input type="text" class="form-control form-control-lg border-0" id="email" nanme="email" placeholder="CVV">
+										</div>
+									</div>
+									<div class="mb-3">
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" id="remberCcFieldsetCheck">
+											<label class="form-check-label" for="remberCcFieldsetCheck">
+												記住卡片資訊
+											</label>
+										</div>
+									</div>
+								</fieldset>
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="bg-white border border-1 border-accent-200 rounded-4 p-6 p-lg-8">
+								<fieldset>
+									<legend class="mb-8">
+										<h2 class="fs-4 text-accent-200">訂單資訊</h2>
+									</legend>
+
+									<div class="border-top border-bottom mb-8 py-6">
+										<div class="d-flex justify-content-between mb-3">
+											<h5 class="fw-bold">輕量型方案</h5>
+											<span class="">NT 1,188</span>
+										</div>
+										<span class="text-gray-400 ">年繳</span>
+									</div>
+
+									<div class="mb-8">
+										<label for="promocode" class="form-label mb-3">折扣碼</label>
+										<div class="d-flex">
+											<div class="">
+												<input type="text" class="form-control form-control-lg border-0" id="promocode" name="promocode" placeholder="請輸入折扣碼">
+											</div>
+											<div class="ms-3">
+												<button type="submit" class="btn btn-custom-gray">套用</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="border-top border-bottom mb-8 py-6">
+										<div class="d-flex justify-content-between align-items-center mb-3">
+											<h6 class="">小計</h6>
+											<spam class="text-newsreader">NT 1,188</spam>
+										</div>
+										<div class="d-flex justify-content-between align-items-center">
+											<h6 class="">折扣</h6>
+											<spam class="text-newsreader">0</spam>
+										</div>
+									</div>
+
+									<div class="mb-8">
+										<div class="d-flex justify-content-between align-items-center">
+											<h6>總計</h6>
+											<spam class="fs-4 fw-bold text-newsreader">NT 1,188</spam>
+										</div>
+									</div>
+
+									<div class="d-grid">
+										<button type="button" class="btn btn-custom-green btn-sm">
+											立即付款
+											<span class="material-symbols-outlined">arrow_right_alt</span>
+										</button>
+									</div>
+								</fieldset>
+							</div>
+						</div>
+					</div>
+				</form>
+
+			</div>
+
+			<footer class="footer bg-primary-100">
     <div class="footer-inner container text-center">
         <p class="text-newsreader">©Vivre 2024 All right Reserved</p>
     </div>
 </footer>
-    
-  </body>
+			
+		</body>
+	</body>
 </html>
