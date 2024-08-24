@@ -1,11 +1,7 @@
 .subscription {
 	.subscription-inner {}
 
-    .card {
-        height: auto !important;
-    }
-
-    .btn {
+/*     .btn {
         border: 0 !important;
         padding: 12px 20px !important;
     
@@ -14,9 +10,7 @@
         letter-spacing: 10% !important;
         font-weight: 700 !important;
         display: flex !important; 
-    }
-
-    
+    } */
 
 	// min-width: 576px
 	@include media-breakpoint-up(sm) {}
@@ -26,8 +20,6 @@
 
 	// min-width: 992px
 	@include media-breakpoint-up(lg) {
-        .card {
-            // height: 696px !important;
-        }
+
     }
 }
