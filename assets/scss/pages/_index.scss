@@ -196,11 +196,8 @@
 
 
 /******* start of hot-articles *******/
-
 .hots {
-	.hots-inner{
-
-	}
+	.hots-inner{}
 
 	// min-width: 576px
 	@include media-breakpoint-up(sm) {}
@@ -212,3 +209,34 @@
 	@include media-breakpoint-up(lg) {}
 }
 /******* end of hot-articles *******/
+
+
+/******* start of projects *******/
+.projects {
+	.projects-inner{}
+
+	.gradient-overlay {
+		position: relative;
+	  }
+	  .cover {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 48px;
+		// background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+		background: linear-gradient(359.16deg, #212529 0.73%, rgba(33, 37, 41, 0.05) 99.27%);
+
+	  }
+
+
+
+	// min-width: 576px
+	@include media-breakpoint-up(sm) {}
+
+	// min-width: 768px
+	@include media-breakpoint-up(md) {}
+
+	// min-width: 992px
+	@include media-breakpoint-up(lg) {}
+}
+/******* end of projects *******/

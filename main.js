@@ -51,26 +51,10 @@ const HotArticleSwiper = new Swiper(".HotArticleSwiper", {
 
 // Life Swiper 首頁品味生活
 const LifeSwiper = new Swiper(".LifeSwiper", {
-  slidesPerView: 3,
-  slidesPerGroup: 3,
+  slidesPerView: 3, // 默认设置为大屏设备显示3个图片
+  slidesPerGroup: 1,
   spaceBetween: 24,
-
-  // loop: true,
-
-  breakpoints: {
-    /* 768: {
-      slidesPerView: 2,
-      spaceBetween: 24,
-    }, */
-    /* 992: {
-      slidesPerView: 1,
-      spaceBetween: 48,
-    }, */
-    /* 1200: {
-      slidesPerView: 2,
-      spaceBetween: 48,
-    } */
-  },
+  direction: 'horizontal', // 默认横向滑动
 
   navigation: {
     nextEl: ".swiper-next-life",
@@ -78,6 +62,24 @@ const LifeSwiper = new Swiper(".LifeSwiper", {
   },
   pagination: {
     el: ".swiper-pagination-life",
+    type: "fraction"
+  }
+});
+
+
+// Life Swiper 首頁品味生活
+const ProjectSwiper = new Swiper(".ProjectSwiper", {
+  slidesPerView: 1, // 默认设置为大屏设备显示3个图片
+  slidesPerGroup: 1,
+  spaceBetween: 24,
+  direction: 'horizontal', // 默认横向滑动
+
+  navigation: {
+    nextEl: ".swiper-next-project",
+    prevEl: ".swiper-prev-project"
+  },
+  pagination: {
+    el: ".swiper-pagination-project",
     type: "fraction"
   }
 });
