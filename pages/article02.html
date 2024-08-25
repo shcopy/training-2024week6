@@ -1,21 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>內容訂閱網站</title>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>文章內容頁 | 內容訂閱網站</title>
 
-  </head>
-  <body>
-    <%- include('./layout/nav'); -%>
+	</head>
+	<body>
+		<%- include('./layout/nav'); -%>
 
-    <div class="container">
-      <h1 class="index-title">我是首頁</h1>
-    </div>
+		<div class="article">
+			<div class="container article-inner py-10 py-lg-11">
 
-    <%- include('./layout/footer'); -%>
+				<nav aria-label="breadcrumb mt-5 mt-lg-5">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item">
+							<a href="#">首頁</a>
+						</li>
+						<li class="breadcrumb-item" aria-current="page">所有文章</li>
+						<li class="breadcrumb-item active" aria-current="page">私人島嶼的露營奇遇記</li>
+					</ol>
+				</nav>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+				<div class="article-header">
+					<h2 class="article-title">私人島嶼的露營奇遇記</h2>
+					<small class="article-date">2024 / 5 / 1</small>
+				</div>
+
+        <div class="gradient-overlay">
+          <div class="cover"></div>
+
+          <div class="article-body">
+            <p>嗨！我是秘境尋蹤小編 Elly，很高興能與你分享我這段令人心曠神怡的旅程。這不僅僅是一次旅行，更是一場對自然、對內心的深度體悟，一次重新與大自然連結的奇妙旅程。希望透過我的分享，你也能感受到這份自然之美，並找到一份屬於自己的心靈寧靜。</p>
+            <p>這段旅程的開始，是從一個遙遠的小島。我對於這片土地的認識，僅止於一些遊記和照片，對於它的神秘感與未知感讓我充滿了好奇。一艘小船，帶著我穿越海浪，穿過風暴，終於抵達了這片被大自然雕琢的寶地。當我踏上這片島嶼的那一刻，心中充滿了震撼與喜悅。</p>
+  
+            <picture>
+              <source srcset="../assets/images/content-1.png" media="(min-width: 992px)"/>
+              <img src="../assets/images/content-1-sm.png" alt="content-1" class="w-100"/>
+            </picture>
+  
+          </div>
+
+        </div>
+        <div class="text-center">
+          <p class="fw-bold text-center mb-4 d-none d-md-block">
+            本篇為會員專屬文章，馬上訂閱瀏覽所有內容！
+          </p>
+          <p class="fw-bold text-center mb-4 d-block d-md-none">
+            本篇為會員專屬文章<br/>馬上訂閱瀏覽所有內容！
+          </p>
+
+          <a href="subscription.html" class="btn btn-custom-green btn-sm btn-lg">
+            我要訂閱<i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+				<!-- start of 延伸閱讀-->
+				<div class="further-reading mt-10 mt-lg-12">
+					<h3 class="further-reading-title">延伸閱讀</h3>
+					<ul class="row g-8 d-none d-lg-block">
+						<li class="col-12 me-6 mb-lg-8">
+							<div class="card">
+								<div class="row g-0">
+									<div class="col-3">
+										<img src="../assets/images/read-1.png" alt="read-1" class="w-100"/>
+									</div>
+									<div class="col-9">
+										<div class="card-body">
+											<div class="mb-auto">
+												<h5 class="card-title">週末說走就走露營記</h5>
+												<p class="card-text">遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...</p>
+											</div>
+											<div class="mt-auto text-end">
+												<a href="article01.html" class="text-accent-200 fs-5 fw-bold text-newsreader">
+													Read More
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col-12 me-6 mb-lg-8">
+							<div class="card">
+								<div class="row g-0">
+									<div class="col-3">
+										<img src="../assets/images/read-2.png" alt="read-2" class="w-100"/>
+									</div>
+									<div class="col-9">
+										<div class="card-body">
+											<div class="mb-auto">
+												<h5 class="card-title">城市野營日記</h5>
+												<p class="card-text">終於!我實現了一個看似瘋狂的想法—在熟悉的城市裡野營一晚。說實話,一開始我也有點懷疑自己,畢竟眾目睽睽之下搭帳篷實在有點怪異。不過漸漸地,這股初時的侷促不...</p>
+											</div>
+											<div class="mt-auto text-end">
+												<a href="article01.html" class="text-accent-200 fs-5 fw-bold text-newsreader">
+													Read More
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="col-12">
+							<div class="card">
+								<div class="row g-0">
+									<div class="col-3">
+										<img src="../assets/images/read-3.png" alt="read-3" class="w-100"/>
+									</div>
+									<div class="col-9">
+										<div class="card-body">
+											<div class="mb-auto">
+												<h5 class="card-title">和寵物去露營 - 大自然之旅的雙倍體驗</h5>
+												<p class="card-text">說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當...</p>
+											</div>
+											<div class="mt-auto text-end">
+												<a href="article01.html" class="text-accent-200 fs-5 fw-bold text-newsreader">
+													Read More
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+					<!-- Swiper -->
+					<div class="furtherReadingSwiper d-md-block d-lg-none overflow-x-hidden">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+
+								<div class="card">
+									<img src="../assets/images/read-1-sm.png" alt="read-3" class="w-100"/>
+									<div class="card-body">
+										<div class="mb-auto">
+											<h5 class="card-title">私人島嶼的露營奇遇記</h5>
+											<p class="card-text">遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...</p>
+										</div>
+										<div class="mt-auto text-end">
+											<a href="#" class="text-accent-200 fs-4 fw-bold text-newsreader">
+												Read More
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="card">
+									<img src="../assets/images/read-2-sm.png" alt="read-3" class="w-100"/>
+									  <div class="card-body">
+												<div class="mb-auto">
+											<h5 class="card-title">和寵物去露營 - 大自然之旅的雙倍體驗</h5>
+											<p class="card-text">說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當...</p>
+										</div>
+										<div class="mt-auto text-end">
+											<a href="#" class="text-accent-200 fs-4 fw-bold text-newsreader">
+												Read More
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="card">
+									<img src="../assets/images/read-3-sm.png" alt="read-3" class="w-100"/>
+									<div class="card-body">
+										<div class="mb-auto">
+											<h5 class="card-title">和寵物去露營 - 大自然之旅的...</h5>
+											<p class="card-text">說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當的...</p>
+										</div>
+										<div class="mt-auto text-end">
+											<a href="#" class="text-accent-200 fs-4 fw-bold text-newsreader">
+												Read More
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+						<!-- <div class="swiper-pagination"></div> -->
+					</div>
+
+
+				</div>
+				<!-- end of 延伸閱讀-->
+
+			</div>
+
+			<%- include('./layout/footer'); -%>
+
+			<script type="module" src="../main.js"></script>
+		</body>
+	</body>
 </html>

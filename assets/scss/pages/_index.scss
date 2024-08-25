@@ -125,29 +125,18 @@
 /******* end of hot-topic *******/
 
 
-/******* start of major-event *******/
-.major-event {
+/******* start of event *******/
+.event {
 	background-color: $primary-200;
 
-	.major-event-inner {
+	.event-inner {
 
 		h3 {
 			color: $accent-200;
 		}
 
-		.event-list {
+		.list {
 			width: 254px;
-			list-style: none; // 清除預設樣式
-			margin: 0 auto; // 清除預設樣式
-			padding: 0; // 清除預設樣式
-
-
-			.event-item {
-				display: flex;
-				font-weight: 600;
-				color: $gray-400;
-				margin-bottom: 16px;
-			}
 		}
 	}
 
@@ -159,18 +148,17 @@
 
 	// min-width: 992px
 	@include media-breakpoint-up(lg) {
-		.major-event-inner {
+		.event-inner {
 
 			h3 {
 				color: $primary-400;
 			}
-
 		}
 	}
 
 }
 
-/******* end of major-event *******/
+/******* end of event *******/
 
 
 /******* start of contact-me *******/
@@ -190,3 +178,37 @@
 }
 
 /******* end of contact-me *******/
+
+/******* start of hot-articles *******/
+.hot-articles {
+	.hot-articles-inner{}
+
+	// min-width: 576px
+	@include media-breakpoint-up(sm) {}
+
+	// min-width: 768px
+	@include media-breakpoint-up(md) {}
+
+	// min-width: 992px
+	@include media-breakpoint-up(lg) {}
+}
+/******* end of hot-articles *******/
+
+
+/******* start of hot-articles *******/
+
+.hots {
+	.hots-inner{
+
+	}
+
+	// min-width: 576px
+	@include media-breakpoint-up(sm) {}
+
+	// min-width: 768px
+	@include media-breakpoint-up(md) {}
+
+	// min-width: 992px
+	@include media-breakpoint-up(lg) {}
+}
+/******* end of hot-articles *******/

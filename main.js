@@ -21,107 +21,112 @@ window.$ = jQuery;
   //jQuery("ul").toggleClass("close");
 }); */
 
+// JavaScript
 
-const swiper = new Swiper(".mySwiper", {
-  pagination: {
-    el: ".swiper-pagination",
+// SelArticle Swiper 首頁精選文章
+const HotArticleSwiper = new Swiper(".HotArticleSwiper", {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 48,
+
+  // loop: true,
+
+  breakpoints: {
+    1200: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 48,
+    }
   },
+
+  navigation: {
+    nextEl: ".swiper-next-HotArticle",
+    prevEl: ".swiper-prev-HotArticle"
+  },
+  pagination: {
+    el: ".swiper-pagination-HotArticle",
+    type: "fraction"
+  }
+});
+
+// Life Swiper 首頁品味生活
+const LifeSwiper = new Swiper(".LifeSwiper", {
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 24,
+
+  // loop: true,
+
+  breakpoints: {
+    /* 768: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    }, */
+    /* 992: {
+      slidesPerView: 1,
+      spaceBetween: 48,
+    }, */
+    /* 1200: {
+      slidesPerView: 2,
+      spaceBetween: 48,
+    } */
+  },
+
+  navigation: {
+    nextEl: ".swiper-next-life",
+    prevEl: ".swiper-prev-life"
+  },
+  pagination: {
+    el: ".swiper-pagination-life",
+    type: "fraction"
+  }
 });
 
 
-const swiper2 = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
+// furtherReading Swiper
+const furtherReadingSwiper = new Swiper(".furtherReadingSwiper", {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 24,
   loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+  // Responsive breakpoints
+/*    breakpoints: {
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 24
+    }
+  }, */
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  /* autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  }, */
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+  /* navigation: {
+    nextEl: ".swiper-button-next-comment",
+    prevEl: ".swiper-button-prev-comment",
+    clickable: true,
+  }, */
+
+  /*  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  }, */
 });
 
-
-
-// JavaScript
-// News swiper
-const newsSwiper = new Swiper(".newsSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 24,
-    loop: true,
-    centeredSlides: true,
   
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-  
-    navigation: {
-      nextEl: ".swiper-button-next-news",
-      prevEl: ".swiper-button-prev-news",
-      clickable: true,
-    },
-  
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  })
+// aos
+AOS.init();
   
   
-  // furtherReading Swiper
-  const furtherReadingSwiper = new Swiper(".furtherReadingSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 24,
-    loop: true,
-
-    // Responsive breakpoints
- /*    breakpoints: {
-      768: {
-        slidesPerView: 1,
-        spaceBetween: 24
-      }
-    }, */
-  
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-  
-    /* navigation: {
-      nextEl: ".swiper-button-next-comment",
-      prevEl: ".swiper-button-prev-comment",
-      clickable: true,
-    }, */
-  
-   /*  pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    }, */
+// jQuery
+// Signin/ login
+$('.needs-validation').each(function (index) {
+  $(this).on('submit', function (e) {
+    e.preventDefault();
+    $(this).addClass('was-validated');
   });
- 
-  
-  // aos
-  AOS.init();
-  
-  
-  // jQuery
-  // Signin/ login
-  $('.needs-validation').each(function (index) {
-    $(this).on('submit', function (e) {
-      e.preventDefault();
-      $(this).addClass('was-validated');
-    });
-  });
+});
 
 console.log("Hello world!");
