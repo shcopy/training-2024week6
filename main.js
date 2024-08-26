@@ -49,6 +49,23 @@ const HotArticleSwiper = new Swiper(".HotArticleSwiper", {
   }
 });
 
+// How-Now Swiper 首頁大家都在看
+const HowNowSwiper = new Swiper(".HowNowSwiper", {
+  slidesPerView: 1, // 默认设置为大屏设备显示3个图片
+  slidesPerGroup: 1,
+  spaceBetween: 24,
+  direction: 'horizontal', // 默认横向滑动
+
+  navigation: {
+    nextEl: ".swiper-next-HowNow",
+    prevEl: ".swiper-prev-HowNow"
+  },
+  pagination: {
+    el: ".swiper-pagination-HowNow",
+    type: "fraction"
+  }
+});
+
 // Life Swiper 首頁品味生活
 const LifeSwiper = new Swiper(".LifeSwiper", {
   slidesPerView: 3, // 默认设置为大屏设备显示3个图片
@@ -66,8 +83,7 @@ const LifeSwiper = new Swiper(".LifeSwiper", {
   }
 });
 
-
-// Life Swiper 首頁品味生活
+// Project Swiper 首頁風格提案
 const ProjectSwiper = new Swiper(".ProjectSwiper", {
   slidesPerView: 1, // 默认设置为大屏设备显示3个图片
   slidesPerGroup: 1,
@@ -84,8 +100,8 @@ const ProjectSwiper = new Swiper(".ProjectSwiper", {
   }
 });
 
-
-// furtherReading Swiper
+// 
+// furtherReading Swiper 文章頁延伸閱讀
 const furtherReadingSwiper = new Swiper(".furtherReadingSwiper", {
   slidesPerView: 1,
   slidesPerGroup: 1,
