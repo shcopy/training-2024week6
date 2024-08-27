@@ -19,15 +19,15 @@ h3,
 h4,
 h5,
 h6 {
-  letter-spacing: 0.1em;
+  letter-spacing: $font-size-base * 0.1;
 }
 
 p {
-  letter-spacing: 0.05em;
+  letter-spacing: $font-size-base * 0.05;
 }
 
- ul, li {
+/*  ul, li {
   list-style: none;
   margin: 0;
   padding: 0;
-} 
+}  */
